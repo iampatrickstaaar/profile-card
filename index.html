@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="profile-card-container">
+        <label for="switch">
+            <input type="checkbox" id="switch">
+            <ion-icon name="sunny" class="sun"></ion-icon>
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <span class="toggle"></span>
+        </label>
+        <div class="profile">
+            <div class="content-container">
+                <div class="nav-container">
+                    <span class="arrow-icon"><i class="fa-solid fa-arrow-left"></i></span>
+                    <span class="spacer"></span>
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
+                    <span class="elipsis-icon"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+                <div class="profile-box-container">
+                   <img src="image/profile.jpg" class="profile-image">
+                </div>
+                <div class="text-box-container">
+                    <span class="profile-name">Patrick Jason Villadores</span>
+                    <span class="profile-position">FRONTEND DEVELOPER</span>
+                    <span class="introduction"> Experienced and passionate web developer dedicated to crafting user-centric digital experiences. Let's collaborate to bring your digital visions to life!</span>
+                    <div class="soc-media-container">
+                        <div class="social-media-icons">
+                            <a href="https://www.facebook.com/villadores/" style="background:#EC4D37; color:white;"class="link"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/" style="background:#EC4D37; color:white;" class="link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/?lang=en" style="background:#EC4D37; color:white;" class="link"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/patrick-jason-villadores-6787ba252/" style="background:#EC4D37; color:white;" class="link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="message-Btn">Message</button>
+                        <button class="follow-Btn">Hire Me</button>
+                    </div>
+                </div>
+                <div class="skill-container">
+                    <div class="title">SKILLS</div>
+                    <div class="skills">
+                    <span class="skill-sets"> UI/UX </span>
+                    <span class="skill-sets"> Front End Development </span>
+                    <span class="skill-sets"> HTML </span>
+                    <span class="skill-sets"> CSS </span>
+                    <span class="skill-sets"> Javascript </span>
+                    <span class="skill-sets"> Bootstrap </span>
+                    <span class="skill-sets"> Github </span>
+                </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var switchInput = document.getElementById("switch");
+    
+            switchInput.addEventListener('change', function() {
+                var profileCardContainer = document.querySelector('.profile-card-container');
+                profileCardContainer.classList.toggle("dark-theme");
+            });
+        });
+    </script>
+
+
+
+
+</body>
+</html>
